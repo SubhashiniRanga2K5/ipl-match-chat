@@ -1,18 +1,45 @@
-# IPL Match Chat - AI Powered Chatbot
+# 🏏 IPL Match Chat — AI Powered
 
-A real-time IPL match chat with Gemini AI.
+Live IPL match chat with real-time AI bot powered by Claude.
 
-## Features
-- Live Match Chat with reactions
-- AI Bot powered by Gemini 2.5 Flash
-- Match Predictions + Leaderboard
-- Live Stats and Score Updates
-- Dark/Light Mode
+## ⚡ Quick Start
 
-## How to Run
-1. Download chat.html
-2. Open in any browser - no server needed!
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-## Tech Stack
-- HTML, CSS, JavaScript
-- Google Gemini 2.5 Flash API
+### 2. Add your API key
+Open `.env` and paste your Anthropic API key:
+```
+ANTHROPIC_API_KEY=sk-ant-api03-xxxxxxxx
+```
+Get your key at: https://console.anthropic.com
+
+### 3. Run
+```bash
+python app.py
+```
+Browser opens automatically at **http://localhost:5000** 🚀
+
+## 📁 Folder Structure
+```
+ipl-match-chat/
+├── app.py           ← Flask backend (run this)
+├── .env             ← Your API key (never commit!)
+├── requirements.txt
+├── README.md
+├── index.html       ← Full frontend
+├── style.css
+├── config.js
+├── ui.js
+├── chat.js
+└── ai-bot.js
+```
+
+> ⚠️ **Do NOT open index.html directly** — always run `python app.py` and use http://localhost:5000
+
+## 🔧 Tech Stack
+- **Frontend**: Vanilla JS, CSS3 (Rajdhani + Bebas Neue fonts)
+- **Backend**: Flask (Python)
+- **AI**: Claude 3 Haiku via Anthropic API
